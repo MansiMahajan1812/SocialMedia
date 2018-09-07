@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yQ1-zu-eTi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,28 +20,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Y8-iZ-tBy">
-                                <rect key="frame" x="10" y="328.5" width="111.5" height="30"/>
+                                <rect key="frame" x="10" y="168" width="111.5" height="30"/>
                                 <state key="normal" title="Facebook"/>
                                 <connections>
                                     <action selector="facebookLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dah-S9-cak"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-ro-iZW">
-                                <rect key="frame" x="131.5" y="328.5" width="112" height="30"/>
+                                <rect key="frame" x="131.5" y="168" width="112" height="30"/>
                                 <state key="normal" title="Google"/>
                                 <connections>
                                     <action selector="gmailLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="add-ie-R6g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5Q-Fl-s2a">
-                                <rect key="frame" x="253.5" y="328.5" width="111.5" height="30"/>
+                                <rect key="frame" x="253.5" y="168" width="111.5" height="30"/>
                                 <state key="normal" title="Twitter"/>
                                 <connections>
                                     <action selector="twitterLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fht-X0-uek"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qID-3H-eJ1">
-                                <rect key="frame" x="10" y="433.5" width="111.5" height="60"/>
+                                <rect key="frame" x="10" y="298" width="111.5" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2fe-3Z-0VR"/>
                                 </constraints>
@@ -50,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2i-Qy-c3b">
-                                <rect key="frame" x="131.5" y="433.5" width="112" height="60"/>
+                                <rect key="frame" x="131.5" y="298" width="112" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Hka-nI-Jof"/>
                                 </constraints>
@@ -60,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bx-Sc-F0H">
-                                <rect key="frame" x="253.5" y="433.5" width="111.5" height="60"/>
+                                <rect key="frame" x="253.5" y="298" width="111.5" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="CO5-fq-KJP"/>
                                 </constraints>
@@ -69,11 +70,25 @@
                                     <action selector="twitterLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Prm-DT-Wpc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-DI-kFm">
+                                <rect key="frame" x="197.5" y="458" width="157.5" height="30"/>
+                                <state key="normal" title="Share(Twitter)"/>
+                                <connections>
+                                    <action selector="shareData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="niG-C3-8sP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-12-GzD">
+                                <rect key="frame" x="20" y="458" width="157.5" height="30"/>
+                                <state key="normal" title="Share(FB)"/>
+                                <connections>
+                                    <action selector="facebookShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNN-UK-bMa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4Y8-iZ-tBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2Wt-1w-9E9"/>
-                            <constraint firstItem="h2i-Qy-c3b" firstAttribute="top" secondItem="Qyb-ro-iZW" secondAttribute="bottom" constant="75" id="7cY-aZ-3bU"/>
+                            <constraint firstItem="h2i-Qy-c3b" firstAttribute="top" secondItem="Qyb-ro-iZW" secondAttribute="bottom" constant="100" id="7cY-aZ-3bU"/>
                             <constraint firstItem="k5Q-Fl-s2a" firstAttribute="top" secondItem="Qyb-ro-iZW" secondAttribute="top" id="B5D-t0-3b0"/>
                             <constraint firstItem="qID-3H-eJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="BQx-y8-D38"/>
                             <constraint firstItem="0bx-Sc-F0H" firstAttribute="leading" secondItem="h2i-Qy-c3b" secondAttribute="trailing" constant="10" id="CC3-pj-AMW"/>
@@ -82,21 +97,47 @@
                             <constraint firstItem="k5Q-Fl-s2a" firstAttribute="width" secondItem="4Y8-iZ-tBy" secondAttribute="width" id="GPi-Nc-4Yb"/>
                             <constraint firstItem="h2i-Qy-c3b" firstAttribute="width" secondItem="qID-3H-eJ1" secondAttribute="width" id="KJD-hV-L4B"/>
                             <constraint firstItem="0bx-Sc-F0H" firstAttribute="width" secondItem="qID-3H-eJ1" secondAttribute="width" id="LQq-Sd-Ydg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uhd-DI-kFm" secondAttribute="trailing" constant="20" id="SKK-3Q-AiF"/>
                             <constraint firstItem="Qyb-ro-iZW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TIn-tf-nSG"/>
+                            <constraint firstItem="Uhd-DI-kFm" firstAttribute="width" secondItem="Fnt-12-GzD" secondAttribute="width" id="TuX-a7-HLu"/>
                             <constraint firstItem="Qyb-ro-iZW" firstAttribute="width" secondItem="4Y8-iZ-tBy" secondAttribute="width" id="aBS-DU-cAf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bx-Sc-F0H" secondAttribute="trailing" constant="10" id="bit-tW-TjD"/>
+                            <constraint firstItem="Fnt-12-GzD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dq9-DT-RmO"/>
+                            <constraint firstItem="Fnt-12-GzD" firstAttribute="top" secondItem="qID-3H-eJ1" secondAttribute="bottom" constant="100" id="i7B-k8-rGo"/>
                             <constraint firstItem="k5Q-Fl-s2a" firstAttribute="leading" secondItem="Qyb-ro-iZW" secondAttribute="trailing" constant="10" id="iJN-NJ-dCb"/>
-                            <constraint firstItem="Qyb-ro-iZW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ltI-hx-vLP"/>
+                            <constraint firstItem="Qyb-ro-iZW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="ltI-hx-vLP"/>
                             <constraint firstItem="0bx-Sc-F0H" firstAttribute="top" secondItem="h2i-Qy-c3b" secondAttribute="top" id="oOZ-Cw-t8H"/>
+                            <constraint firstItem="Uhd-DI-kFm" firstAttribute="top" secondItem="Fnt-12-GzD" secondAttribute="top" id="vAH-97-awi"/>
                             <constraint firstItem="4Y8-iZ-tBy" firstAttribute="top" secondItem="Qyb-ro-iZW" secondAttribute="top" id="vBr-bs-x2H"/>
+                            <constraint firstItem="Uhd-DI-kFm" firstAttribute="leading" secondItem="Fnt-12-GzD" secondAttribute="trailing" constant="20" id="xLL-2j-ePW"/>
                             <constraint firstItem="qID-3H-eJ1" firstAttribute="top" secondItem="h2i-Qy-c3b" secondAttribute="top" id="y3p-6e-zXf"/>
                             <constraint firstItem="h2i-Qy-c3b" firstAttribute="leading" secondItem="qID-3H-eJ1" secondAttribute="trailing" constant="10" id="zIr-hE-wPU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VRC-ja-dpg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="510" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="avp-Tk-qay">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yQ1-zu-eTi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CFC-la-WdK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zVf-Tu-wQl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kf3-kl-YV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-222" y="117"/>
         </scene>
     </scenes>
 </document>

@@ -16,10 +16,6 @@ import TwitterKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-    //1057967692586-fkkc0t5mkprp9bug34eknmj6g31q5jgd.apps.googleusercontent.com
-    
-    //276362666265653
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         TWTRTwitter.sharedInstance().start(withConsumerKey: "vL7yiVrv79K71APxzYUG1u5FS", consumerSecret: "a7R90Dlk2YPt3CNaHlHVSKfz4tVzy1ssvRlIPWZ9LNnt6EQjpS")

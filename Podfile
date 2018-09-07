@@ -6,7 +6,9 @@ target 'SocialMedia' do
   use_frameworks!
 
 pod 'FacebookCore'
+pod 'FBSDKLoginKit'
 pod 'FacebookLogin'
+pod 'FacebookShare'
 pod 'GoogleSignIn'
 pod 'TwitterKit'
   # Pods for SocialMedia
